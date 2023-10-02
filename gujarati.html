@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        button {
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            width: 150px;
+            background-color: #b8d8ee;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* -webkit-backface-visibility: hidden; */
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        @media only screen and (max-width:375px) {
+            .col-lg-4 {
+                margin-top: 50px !important;
+            }
+
+            .h1 {
+                font-size: 64px !important;
+            }
+
+            .row {
+                margin-top: 5px !important;
+            }
+
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1 mt-3" style="text-align: center;">Gujarati Items</h1>
+
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bajra-rotlo.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bajra no rotlo</h1>
+                        <p>The bajra no rotlo are thickly rolled,cooked on tava adn then roast over open flame till
+                            brown
+                            spots appear. traditinally white butter also known as ghee is sameared on it .</p>
+                        <h4>Price: 20₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bhakhri.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bhakhri</h1>
+                        <p>Bhakri is a round flatbread (roti) often used in the cuisine of the states of Gujarat,
+                            Maharashtra, Rajasthan, and Karnataka in India. The bhakri prepared using jowar or bajra
+                            wheat chapati.</p>
+                        <h4>Price: 20₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/rotli.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Rotli</h1>
+                        <p>The roti is a traditional flatbread from the Indian subcontinent. It is normally eaten with
+                            cooked vegetables. It is made most often from
+                            wheat flour, cooked on a flat called a tawa.</p>
+                        <h4>Price: 10₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/thepla.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Thepla</h1>
+                        <p>Thepla is often multigrain, usually made with whole wheat flour with the addition of
+                            millet flour. the flour for theplas is bound into a stiff dough using milk
+                            and with extra ghee/oil.
+                        </p>
+                        <h4>Price: 50₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/handvo.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Handvo</h1>
+                        <p>Handvo is a savory vegetable cake originating from Gujarat, India. It is a
+                            part of the Gujarati cuisine. It is often made with a bottle gourd filling, though many
+                            other
+                            vegetables can be added.</p>
+                        <h4>Price: 120₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/thali.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Gujarati Thali</h1>
+                        <p>A Gujarati thali typically comprises of one or two steamed or fried snacks called farsans, a
+                            green vegetable, a tuber or a gourd shaak , a kathol (braised pulses like beans), one or
+                            more
+                            yogurt ...</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bataka.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bataka Nu Shak</h1>
+                        <p>
+                            Every Gujarati thali has one common sabzi in it. This recipe prepares
+                            traditional Gujarati batata nu rasa valu shaak, which can be paired up with masala puri or
+                            thepla for complete meal.
+                        </p>
+                        <h4>Price: 70₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bharela-rign.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bharela Ringhan</h1>
+                        <p>Bharwa baingan is a Indian style eggplant curry made by simmering small
+                            eggplants in a spicy onion masala.many Indians and enjoy them often with rice or roti.</p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bhareli-bhindi.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bhareli Bhindi</h1>
+                        <p>Bharwa bhindi is a delicious and flavorful gujarati recipe of sauteed okra stuffed with a
+                            flavorful mix of ground spices. This North Indian style stuffed bhindi is a vegan recipe.
+                        </p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/bhindi.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bhindi</h1>
+                        <p>Bhindi is a delicious and flavorful gujarati recipe of sauteed okra stuffed with a
+                            flavorful mix of ground spices. This North Indian style stuffed bhindi is a vegan recipe.
+                        </p>
+                        <h4>Price: 80₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/guvar.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Guvar</h1>
+                        <p>It is a slightly spicy and creamy curry made with guvar (cluster beans) and a blend of
+                            regular
+                            spices. The curry features a creamy masala paste created from peanuts, gram flour,
+                            and yogurt.</p>
+                        <h4>Price:50₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/undhiyu.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Undhiyu</h1>
+                        <p>Undhiyu is a Gujarati mixed vegetable dish that is a regional specialty of Surat, Gujarat,
+                            India.
+                            The name of this dish comes from the Gujarati word "undhu".</p>
+                        <h4>Price: 200₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/vagharela-bhaat.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Fried Rice</h1>
+                        <p>Vagharelo Bhaat is Indian styled fried rice simply made with onions, pepper & some basic
+                            spices
+                            with hint of curry leaves and lot of fresh cilantro! If you see a Gujarati household having
+                            anything. </p>
+                        <h4>Price: 50₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/vaghareli-kichdi.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Vaghareli Kichdi</h1>
+                        <p>It is a simple rice and moong dal khichdi. The aromatic tempering of garlic, mustard seeds,
+                            cumin
+                            seeds and curry leaves adds an
+                            amazing it a perfect way to use the leftover plain khichdi. </p>
+                        <h4>Price:80₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/gujarati/vagharelo-rotlo.jpg" alt="">
+                       
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Vagharelo Rotlo</h1>
+                        <p>Kathiyawadi Vagharelo rotlo is spicy and tasty prepared with leftover rotlo, special garlic
+                            paste, and regular spices. two types of vagharelo rotlo, one is
+                            buttermilk ma vagharelo rotlo.</p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

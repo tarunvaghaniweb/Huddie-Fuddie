@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        button {
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            width: 150px;
+            background-color: #b8d8ee;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* -webkit-backface-visibility: hidden; */
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        @media only screen and (max-width:375px) {
+            .col-lg-4 {
+                margin-top: 50px !important;
+            }
+
+            .h1 {
+                font-size: 64px !important;
+            }
+
+            .row {
+                margin-top: 5px !important;
+            }
+
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1 mt-3" style="text-align: center;">South Indian Items</h1>
+
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/idli.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Idli</h1>
+                        <p>Idlis are round cakes made from a batter of steamed rice and fermented black lentil.
+                            Sometimes,
+                            fenugreek is added to the batter to give it flavour. </p>
+                        <h4>Price: 50₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/podi-idli.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Podi idli</h1>
+                        <p>Podi Idli is a quick South Indian Breakfast dish made by tossing steamed idlis in a spicy
+                            ground
+                            lentil condiment known as Podi. These fluffy Podi Idli are delicious, nutty, and super
+                            healthy.
+                        </p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image//south indian/medu-vada.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Medu vada</h1>
+                        <p>Medu vada are essentially savory donuts made with black, coconut and spices. The word
+                            medu means soft and vada means fritters in Kannada language. also known as Urad Dal Vada in
+                            Hindi.</p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/masala  dhosa.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Masala Dhosa</h1>
+                        <p>Masala Dosa is a South Indian dish. It is a type of
+                            dosa. It is made from rice, Urad
+                            dal, Chana dal, fenugreek, puffed rice, Toor dal, dry red chilli and served with potato
+                            curry,
+                            chutneys, and sambar.</p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/jini-dhosa.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Jini Dhosa</h1>
+                        <p>Jini dosa recipe with step by step pics. This popular dosa variety tastes simply delicious
+                            and
+                            the one that you will find in many popular khau gullies and bustling streets of
+                            Mumbai.</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/southindian-thali.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Thali</h1>
+                        <p>the south indian lunch menu is recommended to have the combination of rasam, sambar,
+                            sabzi or palya, dessert and a salad. the thali extended further by adding snacks
+                            like medu vada, bajji.</p>
+                        <h4>Price: 200₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/chettinad-kuzi.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chettinad Kuzi</h1>
+                        <p>Chettinad Kuzhi Paniyaram, a South Indian recipe made from fermented rice and urad dal batter
+                            which is quite popular in Chettinad region of Tamilnadu it's usually served as
+                            breakfast/dinner
+                        </p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/puttu.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Puttu</h1>
+                        <p>Puttu means "portioned" in Tamil and Malayalam. It is made of steamed cylinders of ground
+                            rice
+                            layered with coconut shavings, sometimes with a sweet or savory filling on the inside.</p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/south indian/ven-pongal.jpg" alt="">
+                   
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Ven Pongal</h1>
+                        <p>Ven Pongal recipe with stovetop Instant pot instructions. Pongal is a South
+                            Indian food made with rice, moong dal, either to a sweet or savory
+                            dish. Ven Pongal also known as Khara Pongal.</p>
+                        <h4>Price: 160₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

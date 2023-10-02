@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        button {
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            width: 150px;
+            background-color: #b8d8ee;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* -webkit-backface-visibility: hidden; */
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        @media only screen and (max-width:375px) {
+            .col-lg-4 {
+                margin-top: 50px !important;
+            }
+
+            .h1 {
+                font-size: 64px !important;
+            }
+
+            .row {
+                margin-top: 5px !important;
+            }
+
+        }
+        h1{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1" style="text-align: center;">Burger & Pizzas</h1>
+
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/chesse-burger.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chesse Burger</h1>
+                        <p>A grilled beef patty on a bun is called a burger. Lunch at a fast food restaurant often
+                            consists of a burger and fries. You can use the word burger as a casual shorthand for
+                            hamburger, which is ground or minced beef that's fried and served on a bun.</p>
+                        <h4>Price: 160₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/chicken-peti.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chicken Petti Burger</h1>
+                        <p>A chicken burger makes for a quick midweek meal or weekend BBQ’s with friends! Crispy
+                            seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with
+                            onion, avocado, lettuce, tomato and garlic mayo.</p>
+                        <h4>Price: 200₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/double-patti.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Double Patti Chesse Burger</h1>
+                        <p>A grilled beef patty on a bun is called a burger. Lunch at a fast food restaurant often
+                            consists of a burger and fries. You can use the word burger as a casual shorthand for
+                            hamburger, which is ground or minced beef.</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/chesy-ham.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chessey Ham Burger</h1>
+                        <p>Ground beef patty topped with a creamy mushroom-cheese sauce, thin-sliced black forest ham,
+                            fresh tomato, grilled onions and tangy horseradish Dijon sauce.</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/salted-fries.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Salted Fries</h1>
+                        <p>french fries, also called chips, finger chips, fries, or French pommes frites, side dish or
+                            snack typically made from deep-fried potatoes that have been cut into various shapes,
+                            especially thin strips. Fries are often salted and served with other items, including
+                            ketchup.</p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/peri-peri.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Peri Peri Fries</h1>
+                        <p>If you love spicy fast food, then peri peri fries are about to become your new favorite
+                            snack! Thick crispy fries, coated in the most amazing spicy, sweet, yet salty seasoning. No
+                            more spending a fortune on takeaways, we show you just how easy they are to make at home!
+                        </p>
+                        <h4>Price: 150₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/chesy-frenchfries.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chessey French Fries</h1>
+                        <p>Cheese fries are French fries covered in a cheese sauce. Of course, you can always add other
+                            toppings like chili for chili cheese fries. But the classic cheese fry is simply sauce and
+                            potatoes. To make a great homemade cheese sauce: as long as you’re stocking a block of
+                            cheddar cheese.</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/corn-chesse.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Corn Chesse Pizza</h1>
+                        <p>The Italian originated dish with a crispy crust brushed thoroughly with pizza sauce and
+                            cheese layers with veg or meat toppings are indeed heaven. it is inclued with corn & chesse
+                            A combination of juicy Sweet Corn & 100% mozzarella cheese with flavourful signature pan
+                            sauce.</p>
+                        <h4>Price: 200₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/margerita.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Margherita Pizza</h1>
+                        <p>Margherita Pizza is made with tomato sauce or marinara as the base sauce on the crust. Fresh
+                            Mozzarella and optionally some parmesan cheese is included which after being baked is topped
+                            with some fresh basil and extra virgin olive oil.
+                        </p>
+                        <h4>Price: 350₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/panner-pizza.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Panner Tikka Pizza</h1>
+                        <p>Basically an indian variation to the popular italian pizza recipe flavoured with marinated
+                            tikka sauce and paneer. Homemade Pizza crust layered with a Special sauce, paneer, bell
+                            pepper, onions, and cheese,
+                            this Paneer Pizza is a must-have for pizza night!</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/supreme-pizza.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Supreme Veg. Pizza</h1>
+                        <p>The onions, capsicum and delectable mushrooms topped with paneer and mozzarella cheese, makes
+                            this pizza one of our all-time favourites. Easy on the spices but high on vegetables, our
+                            deluxe veggie pizza is made using the goodness of onions, capsicum, mushrooms, paneer, and
+                            golden corn.</p>
+                        <h4>Price: 200₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/pizaa&burger/tamato-pizza.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Tamato Pizza</h1>
+                        <p>When it comes to pizza, it's hard to argue with a classic! Cherry tomatoes and mozzarella
+                            cheese work flavor magic atop a homemade, Parmesan-infused crust.Franco Pepe's cheese and
+                            tomato pizza recipe is simplicity at its best, combining sweet ripe tomatoes with beautiful
+                            aged Grana Padano cheese and creamy.
+                        </p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

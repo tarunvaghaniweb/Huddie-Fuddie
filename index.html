@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddie Foodie</title>
+    <link rel="icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./image/food_loader_animation.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav id="navbar_top" class="navbar navbar-expand-lg fixed" style="background-color: #fff;opacity: 1;">
+        <div class="container mx-auto">
+            <img src="./image/Group 1 (1).png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExample">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallary">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="breakfast.html">Break fast</a></li>
+                            <li><a class="dropdown-item" href="gujarati.html">Gujarati</a></li>
+                            <li><a class="dropdown-item" href="panjabi.html">Panjabi</a></li>
+                            <li><a class="dropdown-item" href="south.html">South Indian</a></li>
+                            <li><a class="dropdown-item" href="chinese.html">Chinese</a></li>
+                            <li><a class="dropdown-item" href="burger.html">Burger & Pizza</a></li>
+                            <li><a class="dropdown-item" href="snack.html">Snacks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn rounded-2 btn-secondary" onclick="location.href='login.html'"> Login</button>
+                <button class="btn btn-success ms-4" onclick="location.href='signup.html'">Sign-up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/s1.jpg" class="d-block " alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./image/s2.jpg" class="d-block" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./image/s3.jpg" class="d-block " alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 style="text-align: center;margin-top: 30px;" id="about">About Us</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>We have been making <span style="color: cadetblue;">Healthy food for last 10 years</span></h1>
+                <p style="font-size: 18px;margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem possimus
+                    porro aperiam deserunt
+                    facere ut voluptatem quis sit, doloremque incidunt quos sed, atque laborum suscipit voluptatum
+                    molestiae non repudiandae dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+                    voluptatum eligendi similique repellendus tempore neque quos? Accusamus est facilis rerum quia nihil
+                    impedit, vitae, architecto quos nemo corporis aspernatur ullam.</p>
+            </div>
+            <div class="col-lg-6">
+                <img style="height: 500px; width: 100%;" src="./image/Group 1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center;" id="Menu">Menu</h1>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/mug-8235059_1920.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">Break Fast </h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('breakfast.html')">See More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/gujarati.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">Gujarati </h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('gujarati.html')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/panjabi.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">Panjabi</h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('panjabi.html')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="m-row">
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/south.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">South Indian</h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('chinese.html')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/chinese.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">Chinese </h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('burger.html')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container" id="con">
+                <img src="./image/burger.jpg" alt="Avatar" style="height: 300px; width: 100%;">
+                <div class="overlay">
+                    <h1 style="text-align: center;margin-top: 70px;">Burger</h1>
+                    <div class="center">
+                        <button class="m-btn" onclick="location.href=('burger.html')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;margin-top: 30px;" id="gallary">Gallary</h1>
+
+    <div class="row">
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/1 (2).jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/2 (2).jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/3.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/4.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/5.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/6.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/7.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/pizaa&burger/panner-pizza.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/pizaa&burger/margerita.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4" id="con">
+            <img src="./image/pizaa&burger/corn-chesse.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/gallary/7.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/pizaa&burger/chesy-frenchfries.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4" id="con">
+            <img src="./image/snacks/samosa-chat.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/snacks/kachori.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/snacks/bhelpuri.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4" id="con">
+            <img src="./image/chinese/hakkka nudles.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/chinese/manchuriam.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+        <div class="col-lg-4" id="con">
+            <img src="./image/chinese/panner-chili.jpg" alt="" style="width: 100%;height: 400px;">
+        </div>
+    </div>
+    <footer id="footer" style="margin-top: 20px;background-color: #000;">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact" style="color: aliceblue;">
+                        <h3>Huddie Fuddie<span>.</span></h3>
+                        <p>
+                            Sutex Bank Of Collage <br>
+                            Near amroli,PN 395010<br>
+                            BHARAT <br><br>
+                            <strong>Phone:</strong> +91 99780 43407<br>
+                            <strong>Email:</strong>huddiefuddie@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links" style="color: aliceblue;">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#carouselExample">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#Menu">Menu</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links" style="color: aliceblue;">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#gallary">Gallary</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="breakfast.html">Break fast</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="snack.html">Snacks</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="gujarati.html">For gujarati's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-newsletter" style="color: aliceblue;">
+                        <h4>Join Our Foddie Website</h4>
+                        <form action="" method="post" style="margin-top: 50px;">
+                            <input
+                                style="background-color: #333; color: aliceblue; width: 300px; height: 30px; border: none; border-radius: 8px;"
+                                type="email" placeholder="Your email" name="email" required>
+                            <button onclick="location.href=('#carouselExample')"
+                                style="margin-top: 20px; background-color: #333; color: aliceblue;height: 30px;border: none; border-radius: 8px; width: 100px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start" style="color: aliceblue;">
+                <div class="copyright">
+                    © Copyright <strong><span>Hudddie-Fuddie</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a style="color: blue;"></a>
+                </div>
+            </div>
+
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

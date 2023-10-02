@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        button {
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            width: 150px;
+            background-color: #b8d8ee;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* -webkit-backface-visibility: hidden; */
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        @media only screen and (max-width:375px) {
+            .col-lg-4 {
+                margin-top: 50px !important;
+            }
+
+            .h1 {
+                font-size: 64px !important;
+            }
+
+            .row {
+                margin-top: 5px !important;
+            }
+
+        }
+        h1{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1 mt-3" style="text-align: center;">Break Fast Items</h1>
+
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/bataka-puava.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bataka Poha</h1>
+                        <p>Poha is a supremely breakfast recipe made with flat beaten rice,every household has their own
+                            version of making poh. bataka poha can be quickly made and can be served on any ocassion.
+                        </p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/chole-kulcha.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chole kulcha</h1>
+                        <p> A delicious combination of an all-purpose flour bread tossed in butter along with tangy and
+                            spicy chole, chole kulche is one such dish that we Indians just cannot resist. </p>
+                        <h4>Price: 140₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/idli.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Idli</h1>
+                        <p>Idlis are round cakes made from a batter of steamed rice and fermented black lentil.
+                            Sometimes,
+                            fenugreek is added to the batter to give it flavour. </p>
+                        <h4>Price: 50₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/jalebi-fafda.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Jalebi Fafda</h1>
+                        <p>
+                            Fafda-jalebi is a match made in heaven and Gujaratis treat themselves with this great
+                            combination on Dussehra. But have you ever wondered why do they only consume.</p>
+                        <h4>Price: 250₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/khaman.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>khaman</h1>
+                        <p>Khaman is a steamed snack made with gram flour & spices. serve khaman with this super flavor
+                            ful
+                            coriander chutney, mint chutney & garlic chutney. khaman & dhokla are 2 dishes from gujarat.
+                        </p>
+                        <h4>Price: 120₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/khamni.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Khamni</h1>
+                        <p>Surti Sev Khamani is another steamy recipe from the diamond city of surat, Gujarat. Yes, it
+                            is a
+                            Gujarati dish made using chana dal, aka split chickpeas.it is also called as a "Amiri
+                            khaman".
+                        </p>
+                        <h4>Price: 150₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/medu-vada.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Medu vada</h1>
+                        <p>Medu vada are essentially savory donuts made with black, coconut and spices. The word
+                            medu means soft and vada means fritters in Kannada language. also known as Urad Dal Vada in
+                            Hindi.</p>
+                        <h4>Price: 60₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/methi-gota.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Methi gota</h1>
+                        <p>Methi gota are delicious pakodas made by mixing fenugreek leaves and gram flour. in gujarat
+                            they
+                            are called methi gota whereas in various other states they are called methi pakodas.</p>
+                        <h4>Price: 160₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/patra.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Patra</h1>
+                        <p>Patra is also called gujarati or maharastra alu vadi. if you have a gujju frined or a gujju
+                            collegue, you would try this!.order this awesome break fast for you and your collegue.
+                        </p>
+                        <h4>Price: 180₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/patudi.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Patudi</h1>
+                        <p>Patudi is a key component of the dish and is made from besan flour, The besan flour is mixed
+                            with
+                            spices and water to form a batter, which is cut into diamond shapes. </p>
+                        <h4>Price: 160₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/podi-idli.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Podi idli</h1>
+                        <p>Podi Idli is a quick South Indian Breakfast dish made by tossing steamed idlis in a spicy
+                            ground
+                            lentil condiment known as Podi. These fluffy Podi Idli are delicious, nutty, and super
+                            healthy.
+                        </p>
+                        <h4>Price: 100₹</h4>
+                        <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="img" src="./image/breakfast/chole-baturre.jpg" alt="">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Chole Bhature</h1>
+                        <p>Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a
+                            combination of chana masala (spicy white chickpeas) and bhatura puri, a deep-fried bread
+                            made from maida. Chole bhature is often eaten as a breakfast dish, </p>
+                            <h4>Price: 100₹</h4>
+                            <button type="submit" onclick="alert('your order is on the way!!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
