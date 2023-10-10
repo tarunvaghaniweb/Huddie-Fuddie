@@ -67,11 +67,11 @@
 <body>
     <div class="container">
         <h1 style="color: #0056b3;">Get Started</h1>
-        <form id="form">
-            <input type="text" name="username" placeholder="Username" id="username" required>
-            <input type="password" name="password" placeholder="Password" id="password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password"  id="cpassword" required>
-            <button type="submit" onclick="location.href=('login.html')">Sign Up</button>
+        <form id="form" action="login.html">
+            <input type="text" name="username" placeholder="Username" id="username" >
+            <input type="password" name="password" placeholder="Password" id="password" >
+            <input type="password" name="confirm_password" placeholder="Confirm Password"  id="cpassword" >
+            <button type="submit" >Sign Up</button>
         </form>
         <div class="footer" style="color:#333;">
             Already have an account? <a style="color:#007bff;" href="login.html">Log In</a>
@@ -86,7 +86,8 @@
             const username = document.getElementById("username").value
             const password = document.getElementById("password").value
             const cpassword = document.getElementById("cpassword").value
-            if(!username || !password || cpassword){
+            if(!username || !password || !cpassword){
+                e.preventDefault()
                 alert("please fill fields")
                 return
             }

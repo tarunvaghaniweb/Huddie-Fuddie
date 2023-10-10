@@ -67,10 +67,10 @@
 <body>
     <div class="container">
         <h1 style="color: #0056b3;">Get Login Here..!</h1>
-        <form id="form">
-            <input type="text" name="username" placeholder="Username" id="username" required >
-            <input type="password" name="password" placeholder="Password" id="password" required>
-            <button type="submit" onclick="location.href=('index.html')">Login</button>
+        <form id="form" action="index.html">
+            <input type="text" name="username" placeholder="Username" id="username"  >
+            <input type="password" name="password" placeholder="Password" id="password" >
+            <button type="submit" >Login</button>
         </form>
         <div class="footer" style="color:#333;">
             Already dont't have an account? <a style="color:#007bff;" href="signup.html">Signup</a>
@@ -86,6 +86,7 @@
             const password = document.getElementById("password").value
 
             if(!username || !password){
+                e.preventDefault()
                 alert("please fill fields")
                 return
             }
